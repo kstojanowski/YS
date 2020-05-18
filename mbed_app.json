@@ -1,0 +1,32 @@
+{
+    "config": {
+        "device_name": {
+            "help" : "device name",
+            "value": "\"YellowSubmarine\""
+        },
+        "header": {
+            "help": "communication header",
+            "value": "\"#YS\""
+        },
+        "header_0": {
+            
+            "value": "\"#\""
+        },
+        "header_1" : {
+            "value" : "\"Y\""
+        },
+        "header_2": {
+            "value": "\"S\""
+        }
+        
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-convert-newlines": true,
+            "mbed-trace.enable": true,
+            "mbed-trace.max-level": "TRACE_LEVEL_INFO"
+        }
+
+    }
+}
